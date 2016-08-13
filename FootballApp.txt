@@ -1,0 +1,23 @@
+all ques answered; current ques
+{
+	quesAns() - percentage waala div
+}
+
+all ques not answered; numQuesAnswered >= queslength{quesAns() -- return statement chalegi}
+
+all ques not answered; numQuesAnswered < queslength
+{
+	some ques answered; current ques
+	{
+		current ques answered{quesAns() -- setActiveQues()}
+
+		current ques not answered{quesAns() -- setActiveQues()}
+	}
+
+	zero ques answered; current ques
+	{
+		current ques answered{quesAns() -- setActiveQues()}
+
+		current ques not answered{quesAns() -- setActiveQues()}
+	}
+}
